@@ -48,8 +48,8 @@ Let's see some sample from training data
 
 - Used YoloV5 model for detection.
 - YoloV5 trained from scratch to 1500 epochs on Paperspace P4000 GPU.
-- YoloV5 does image augmentation internally on training images.
-- YOLOv5 applies online imagespace and colorspace augmentations in the trainloader (but not the val_loader) to present a new and unique augmented Mosaic (original image + 3 random images) each time an image is loaded for training. Images are never presented twice in the same way.
+- YoloV5 does image augmentation internally on training images which helps in better predictions and reduce overfitting.
+- YOLOV5 applies online imagespace and colorspace augmentations in the trainloader (but not the val_loader) to present a new and unique augmented Mosaic (original image + 3 random images) each time an image is loaded for training. Images are never presented twice in the same way.
 
 ![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/6.jpg?raw=true)
 
