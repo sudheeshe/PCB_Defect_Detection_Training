@@ -1,43 +1,40 @@
 
 # Printed Circuit Board Defect Detection
 
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/3.jpg?raw=true)
 
+### What is PCB ...??
 
+- `Printed circuit boards (PCBs)` are the foundational building block of most modern electronic devices.  
+- Whether simple single layered boards used in your garage door opener, to the six layer board in your smart watch, to a 60 layer, very high density and high-speed circuit boards used in super computers and servers, printed circuit boards are the foundation on which all of the other electronic components are assembled onto.
 
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/1.jpg?raw=true)
 
-### What Lead Score means...??
-
-![alt text](https://github.com/sudheeshe/LeadScore/blob/main/Images_for_readme/1_.jpg?raw=true)
-
-
-- `Lead scoring:` is a popular methodology used by marketing and sales teams 
-  to determine how likely their leads are to buy. It is a process where you assign a score (often 1-100) to your leads.
-
-- The lead score tells you, your leads’ buying intention. The higher the score, the more likely they’ll buy.
-
-- The simple need of a Lead scoring is to remove guesswork, so you’d spend time on leads who are the most likely to convert.
-
+- Compared to traditional wired circuits, PCBs offer a number of advantages. Their small and lightweight design is appropriate for use in many modern devices, while their reliability and ease of maintenance suit them for integration in complex systems. 
+- Additionally, their low cost of production makes them a highly cost-effective option.
 
 ## Business Scenario
 
-- The Bank is looking for an Effective Lead Scoring System which achieve the following.
+- The Client is looking for an Effective PCB defects detection System which detect the following defects.
 
-        1. Lower marketing and acquisition costs
-        2. Higher conversion rates with less time wasted
-        3. Increase in sales and marketing team alignment: When you implement a method for scoring leads, 
-           you’re ensuring that every lead passed onto sales team are qualified, boosting your conversion rate, and strengthening the relationship between the these two departments.
-        4. Higher revenue
+        1. missing_hole
+        2. mouse_bite
+        3. open_circuit
+        4. short
+        5. spur
+        6. spurious_copper
 
-- Client is looking for an end result which a ML model, which can categorize given leads into `COLD LEADS`,`WARM LEADS`,`HOT LEADS`.
 
+## Data Understanding
 
-## Data understanding & EDA
+- The available dataset have total 485 images for Training.
+- 139 images for Validation and 69 images are provided for testing
+- On an average 90 images per 6 defect class.
+- Labeling was done with `LabelImg` tool and labels are saved on `.txt` format
 
-- The data is related with direct marketing campaigns of a Portuguese banking institution. 
-- The marketing campaigns were based on phone calls. 
-- Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
-- In the dataset, we have customers’ personal information, their contact activity information, previous campaign information, and some social stats, and we also have information about which leads are converted and not converted yet.
+Let's see some sample from training data
 
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/4.jpg?raw=true)
 
 ###### 🔗 Data Description
 [click here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
