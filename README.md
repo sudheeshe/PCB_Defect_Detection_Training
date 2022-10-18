@@ -90,10 +90,24 @@ Let's visualize some of our `training image batch` and `validation image batch`
 
 ## Prediction Images
 
+- In order to do prediction on new images please find my another repository
+
+[Github link](https://github.com/sudheeshe/PCB_Defect_Detection)
+
+- The UI is used for individual predictions by uploading the image
+
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/UI.jpg?raw=true)
+
+- Let's see some prediction done by the model through UI
+
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/pred_collage.jpg?raw=true)
 
 
+## Video Demo
+
+[click here](https://github.com/sudheeshe/YoloV5_Custom_training_template)
 
 
-References:
-### Precision-Recall curve blog 
-[click here](https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248#:~:text=In%20a%20perfect%20classifier%2C%20AUC,have%20AUC%2DPR%20%3D%200.5.)
+## References:
+#### YoloV5 custom training helper repo
+[click here](https://github.com/sudheeshe/YoloV5_Custom_training_template)
