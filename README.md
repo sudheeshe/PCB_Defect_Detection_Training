@@ -49,6 +49,7 @@ Let's see some sample from training data
 - Used YoloV5 model for detection.
 - YoloV5 trained from scratch to 1500 epochs on Paperspace P4000 GPU.
 - YoloV5 does image augmentation internally on training images which helps in better predictions and reduce overfitting.
+
 ![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/6.jpg?raw=true)
 
 Let's visualize some of our `training image batch` and `validation image batch`
@@ -62,13 +63,13 @@ Let's visualize some of our `training image batch` and `validation image batch`
 ![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/val_tile_batch.jpg?raw=true)
 
 
-- Let's see the `mAP` for first `100 epochs`.
+- Let's see the `mAP` for first `100 epochs`. The mAP was `0.0086`
 
 ![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/Reports/100_epoch_eport.png?raw=true)
 
 
-- The mAP for first `1500 epochs` was `0.811`. 
-- The model didn't show any improvement in mAP beyond 1500 epochs.
+- The mAP for `1500 epochs` reached to `0.811` at mAP@0.5 (means mAP at threshold of 0.5). 
+- I've tried to run the model for another 200 epochs but the model didn't show any improvement in mAP beyond 1500 epochs.
 
 #### Precision-Recall Curve
 
