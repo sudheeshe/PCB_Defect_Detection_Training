@@ -108,5 +108,8 @@ Let's visualize some of our `training image batch` and `validation image batch`
 
 
 ## References:
+#### How to do training and inferencing 
+[click here](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/How_to_run.txt)
+
 #### YoloV5 custom training helper repo
 [click here](https://github.com/sudheeshe/YoloV5_Custom_training_template)
