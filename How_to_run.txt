@@ -1,0 +1,48 @@
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Description about Project structure   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+- Reports Folder containing screenshots YoloV5_custom training on various epochs.
+- Weights - Pretrained weight downloaded from github (https://github.com/clintonoduor/PCB-Defect-Detection-using-Deepstream)
+- YoloV5_Training - cloned folder of YoloV5 for custom training (git clone https://github.com/ultralytics/yolov5)
+- Complete_dataset.zip - Yolo and TFOD data sets are available,
+                       - For this project I've used Complete_dataset/Yolo_Complete_dataset/YoloV5 dataset
+- fetch_data.ipynb - For downloading PCB_DATASET for TFOD training
+- YOLO V5 Custom Training.ipynb -  For Training and detection
+
+
+Note:
+- Working directory will be yolov5 for training YOLOV5
+- Train, Validation and Test images with labels are copied to yolov5 folder.
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Training   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+- For training from scratch follow https://github.com/sudheeshe/YoloV5_Custom_training_template
+- For training from model which was already trained for few epochs n order to improve the performance follow the below steps
+
+        1) Make yolov5 as working directory
+        2) best model files will be available at yolov5/runs/train in the name of `best.pt`
+           eg: runs/train/yolov5s_results2/weights/best.pt
+
+           we can select this model to improve the performance the model.
+
+        3) `python train.py --img 416 --batch 32 --epochs 200 --data data.yaml --cfg models/custom_yolov5s.yaml --weights runs/train/yolov5s_results2/weights/best.pt --name yolov5s_results  --cache`
+            run the above to start training the model
+
+- Once the training gets finish the best model and logs will be saved on runs/train/yolov5s_results3
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Inferencing   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+- run the below code on yolov5 working directory
+
+`python detect.py --weights runs/train/yolov5s_results3/weights/best.pt --img 416 --conf 0.5 --source test/images`
+
+- We can change the confidence(threshold) value on the above code by argument `conf 0.5`
+
+- The predictions will get saved at runs/detect/exp path.
+
+
