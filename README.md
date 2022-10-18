@@ -30,16 +30,18 @@
 - The available dataset have total 485 images for Training.
 - 139 images for Validation and 69 images are provided for testing
 - On an average 90 images per 6 defect class.
-- Labeling was done with `LabelImg` tool and labels are saved on `.txt` format
+
 
 Let's see some sample from training data
 
 ![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/4.jpg?raw=true)
 
-###### 🔗 Data Description
-[click here](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 
-Let's see the sample of data 
+## Data Labeling
+
+- Labeling was done with `LabelImg` tool and labels are saved on `.txt` format
+
+![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/5.jpg?raw=true)
 
 ![alt text](https://github.com/sudheeshe/LeadScore/blob/main/Images_for_readme/2_.jpg?raw=true)
 
