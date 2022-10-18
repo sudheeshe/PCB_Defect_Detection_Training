@@ -105,7 +105,7 @@ Let's visualize some of our `training image batch` and `validation image batch`
 
 ## Video Demo
 
-[click here](https://github.com/sudheeshe/YoloV5_Custom_training_template)
+[click here](https://www.youtube.com/watch?v=oRXxbZ7rxrI&ab_channel=SudheeshE)
 
 
 ## References:
